@@ -1,0 +1,338 @@
+.attendence-topdiv{
+    /* padding-top:4rem ; */
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+.attendance-label-div{
+    display: flex;
+    height: 4rem;
+}
+.attendance-label{
+    height: 100%;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    border: .5px solid #cccccc;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.attendance-label span{
+    font-size: .9rem;
+    font-family: 'Comfortaa', cursive;
+}
+.attendance-label .student-add{
+    font-size: .8rem;
+    margin: 0;
+}
+.attendance-label-roll,.attendance-label-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.attendance-label-roll{
+    width: 3rem;
+    height: 100%;
+}
+.attendance-label-name{
+    flex: 1;
+    height: 100%;
+}
+.attendance-date{
+    height: 100%;
+    flex: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.overall-stats{
+    width: calc(9rem + .7rem);
+    padding: 0 5px;
+    border: .5px solid #cacaca;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overall-stats span{
+    font-size: .7rem;
+    font-family: 'Comfortaa', cursive;
+}
+.attendence-fulldiv
+{
+    flex: 1;
+    width: 100%;
+    box-sizing: content-box;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: scroll;
+    position: relative;
+}
+.attendence-fulldiv::-webkit-scrollbar {
+    width: .7rem;
+}
+
+.attendence-fulldiv::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: none;
+}
+
+.attendence-fulldiv::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #929292;
+}
+
+.attendence-fulldiv::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.attendence-leftdiv{
+    width: 15rem;
+    border: .1px solid #555;
+    border-radius: 3px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: flex-start;
+    padding-bottom: 4px;
+}
+.attendence-leftdiv::-webkit-scrollbar{
+    display: none;
+}
+.student-attr{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    
+}
+.student-attr p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+.student-attr p:nth-child(1){
+    font-size: .8rem;
+    
+}
+.student-attr p:nth-child(2){
+    font-size: .6rem;
+    font-weight: 700;
+}
+.student-attr:hover{
+    background-color: #cacaca !important;
+}
+.student__add{
+    padding: 5px 0; 
+    background-color: #cacaca;
+}
+.student__add_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    
+    padding: 1rem 10px;
+    box-sizing: border-box;
+
+}
+.student__add_data span{
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+}
+.student__add_roll,.student__add_name{
+    box-shadow: 3px 3px 5px 0 #444;
+}
+.student__add_field{
+    margin-bottom: 10px;
+
+}
+.student__add_roll input::placeholder,.student__add_name input::placeholder{
+    font-size: .7rem;
+}
+.student__add_roll{
+    width: 5rem;
+}
+.student__add_data_button{
+    padding: 5px 10px;
+    box-shadow: 3px 3px 5px 0 #444;
+}
+.student-infodiv{
+    display: flex;
+    height: 3rem;
+}
+.attendence-display{
+    height: fit-content;
+    /* width: 70%; */
+    flex: 1;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.attendence-rightdiv{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.attendence-display::-webkit-scrollbar{
+    display: none;
+}
+.column-date-div{
+    background-color: #4D96FF;
+    color: #fff;
+    height: 100%;
+    min-width: 3rem;
+    margin-left: 1px;
+    border-radius: 3px;
+    padding: 1px;
+    overflow:hidden ;
+    margin-right: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.column-date-div:hover
+{
+    background-color: #eeeeee;
+    color: #333;
+}
+.column-par 
+{
+    margin: 0;
+    padding: 0;
+}
+.column-date{
+    font-size: .7rem;
+    font-weight: 600;
+}
+.column-time{
+    font-size: .5rem;
+    font-weight: 500;
+}
+.attendance-student-stat{
+    width: 9rem;
+    min-width: 5rem;
+    border: .1px solid #444;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    padding-top: 2px;
+}
+.column-date-div__stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+.column-date-div__stat p{
+    padding: 0;
+    margin: 0;
+    font-size: .5rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.attendence-rightdiv__add{
+    width: 3rem;
+}
+.column__add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 5px 0 #666;
+    margin: .3rem;
+    padding: .2rem;
+}
+.print-button{
+    padding: 5px;
+}
+.attendence-null{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.attendence-null p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+}
+.student-add{
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #41AEA9;
+    color: #fff;
+    font-size: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .attendance-label,.attendence-leftdiv,.overall-stats,.attendance-student-stat{
+        width: 5rem;
+    }
+    .attendence-leftdiv p{
+        font-size: .6rem;
+    }
+    .overall-stats span{
+        font-size: .7rem;
+    }
+    .attendance-date::-webkit-scrollbar{
+        display: none;
+    }
+    .student-attr p:nth-child(1){
+        font-size: .5rem;
+        
+    }
+    .attendance-label span{
+        font-size: .7rem;
+        margin-bottom: 5px;
+    }
+    .student-attr p:nth-child(2){
+        font-size: .5rem;
+        font-weight: 700;
+    }
+    .attendance-student-stat__stat p:nth-child(1){
+        font-size: .7rem;
+    }
+    .attendance-student-stat__stat p:nth-child(2){
+        font-size: .5rem;
+    }
+    .attendence-fulldiv::-webkit-scrollbar {
+        display: none;
+    }
+    .attendence-null p{
+        font-size: .8rem;
+    }
+    .student-add{
+        font-size: .8rem;
+    }
+  }
